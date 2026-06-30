@@ -179,5 +179,24 @@
 
 </a-scene>
 
+<button id="exitVR"
+        style="position:fixed;
+               top:20px;
+               right:20px;
+               z-index:999;
+               padding:10px 20px;">
+    Exit Exhibition
+</button>
+
+<script>
+document.getElementById('exitVR').onclick = function () {
+    const scene = document.querySelector('a-scene');
+
+    if (scene.is('vr-mode')) {
+        scene.exitVR();
+    }
+};
+</script>    
+    
 </body>
 </html>
