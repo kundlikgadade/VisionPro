@@ -11,61 +11,14 @@
 
 <a-scene>
 
+<a-assets>
+        <img id="studioSky" src="images/studio.jpg">
+    </a-assets>
+
     <!-- Sky -->
-    <a-sky color="#EAEAEA"></a-sky>
+    <a-sky src="#studioSky"></a-sky>
 
-    <!-- Floor -->
-    <a-box
-        position="0 -0.1 0"
-        width="20"
-        height="0.2"
-        depth="20"
-        color="#D8D8D8">
-    </a-box>
-
-    <!-- Ceiling -->
-    <a-box
-        position="0 5 0"
-        width="20"
-        height="0.2"
-        depth="20"
-        color="#FFFFFF">
-    </a-box>
-
-    <!-- Walls -->
-    <a-box
-        position="0 2.5 -10"
-        width="20"
-        height="5"
-        depth="0.2"
-        color="#F5F5F5">
-    </a-box>
-
-    <a-box
-        position="0 2.5 10"
-        width="20"
-        height="5"
-        depth="0.2"
-        color="#F5F5F5">
-    </a-box>
-
-    <a-box
-        position="-10 2.5 0"
-        width="0.2"
-        height="5"
-        depth="20"
-        color="#F5F5F5">
-    </a-box>
-
-    <a-box
-        position="10 2.5 0"
-        width="0.2"
-        height="5"
-        depth="20"
-        color="#F5F5F5">
-    </a-box>
-
-    <!-- Lighting -->
+        <!-- Lighting -->
     <a-light
         type="ambient"
         intensity="0.8">
